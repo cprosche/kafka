@@ -1,3 +1,5 @@
+topic := cadescooltopic
+
 run:
 	docker compose up -d
 
@@ -5,16 +7,16 @@ create-topic:
 	docker exec broker \
 		kafka-topics \
 		--bootstrap-server broker:9092 \
-		--create --topic cadescooltopic
+		--create --topic $(topic)
 
 producer: 
 	docker exec --interactive --tty broker \
 		kafka-console-producer \
 		--bootstrap-server broker:9092 \
-		--topic cadescooltopic
+		--topic $(topic)
 
 consumer:
 	docker exec --interactive --tty broker \
 		kafka-console-consumer \
 		--bootstrap-server broker:9092 \
-		--topic cadescooltopic --from-beginning
+		--topic $(topic) --from-beginning
