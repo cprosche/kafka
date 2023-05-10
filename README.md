@@ -2,7 +2,11 @@
 
 This repo is a demo of how Kafka works.
 
-## Requirements
+## Diagram
+
+![Kafka 101 Diagram](./kafka-101.png)
+
+## Demo Requirements
 
 - Docker
   - Windows Install: https://docs.docker.com/desktop/install/windows-install/
