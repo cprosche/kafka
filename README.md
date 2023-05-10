@@ -22,3 +22,11 @@ This repo is a demo of how Kafka works.
 
 - `make producer` - Starts a producer that will send messages to the topic
 - `make consumer` - Starts a consumer that will read messages from the topic
+
+## Notes
+
+- The best mental model for Kafka is a distributed commit log
+- Kafka is designed for high throughput and low latency, and to scale horizontally
+- Use cases:
+  - Real time data processing
+  - Log aggregation
