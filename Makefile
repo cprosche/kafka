@@ -10,13 +10,13 @@ create-topic:
 		--create --topic $(topic)
 
 producer: 
-	docker exec --interactive --tty broker \
+	docker exec -it broker \
 		kafka-console-producer \
 		--bootstrap-server broker:9092 \
 		--topic $(topic)
 
 consumer:
-	docker exec --interactive --tty broker \
+	docker exec -it broker \
 		kafka-console-consumer \
 		--bootstrap-server broker:9092 \
 		--topic $(topic) --from-beginning
