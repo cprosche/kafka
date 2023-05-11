@@ -30,3 +30,9 @@ This repo is a demo of how Kafka works.
 - Use cases:
   - Real time data processing
   - Log aggregation
+
+## Companies using Kafka
+
+- Walmart - [Real time inventory management](https://www.confluent.io/blog/how-walmart-uses-kafka-for-real-time-omnichannel-replenishment/)
+- Target - Omnichannel distribution and logistics
+- Adidas - Real time data analytics
